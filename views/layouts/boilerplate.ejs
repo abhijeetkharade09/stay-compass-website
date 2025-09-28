@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/rating.css">
+
+<!-- MAP LINK -->
+  <script src='https://tiles.locationiq.com/v3/libs/maplibre-gl/1.15.2/maplibre-gl.js'></script>
+        <link href='https://tiles.locationiq.com/v3/libs/maplibre-gl/1.15.2/maplibre-gl.css' rel='stylesheet' />
+        
+        <script src='https://tiles.locationiq.com/v3/js/liq-styles-ctrl-libre-gl.js?v=0.1.8'></script>
+        <link href='https://tiles.locationiq.com/v3/css/liq-styles-ctrl-libre-gl.css?v=0.1.8' rel="stylesheet" />
+
+      <!-- MapLibre GL JS -->
+<link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+
+<!-- LocationIQ JS (for getLayer support) -->
+<script src="https://maps.locationiq.com/v2/maps.js?key=<%= process.env.MAP_TOKEN %>"></script>
+
+
+</head>
+<body>
+
+  <%- include('../includes/navbar.ejs') %>      <!-- In EJS (Embedded JavaScript Templates), the concept of includes or partials allows you to reuse common parts of HTML (like headers, footers, navbars, etc.) across multiple pages. -->
+  
+  <div class="container"> 
+     <%- include('../includes/flash.ejs') %> 
+    <%- body %>               <!-- This line injects the content from the child file (like index.ejs, show.ejs) here -->
+  </div>
+
+   <%- include('../includes/footer.ejs') %> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
