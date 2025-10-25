@@ -2,11 +2,7 @@
   "engines": {
     "node": "22.15.0"
   },
-<<<<<<< HEAD
-  "name": "wanderlust",
-=======
   "name": "compass",
->>>>>>> 7c996f7 (changes done)
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

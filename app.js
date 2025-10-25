@@ -1,11 +1,6 @@
 if (process.env.NODE_ENV != "production"){
     require("dotenv").config();
 }
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 7c996f7 (changes done)
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -24,11 +19,7 @@ const listingRouter = require('./routes/listing.js');  // Express Router: Restru
 const reviewRouter = require('./routes/review.js');    // Express Router: Restructuring Reviews
 const userRouter = require("./routes/user.js")         // SignUp  and Login User
 
-<<<<<<< HEAD
-// const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
-=======
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/compass';
->>>>>>> 7c996f7 (changes done)
 const dbUrl = process.env.ATLASDB_URL; 
 
 main()

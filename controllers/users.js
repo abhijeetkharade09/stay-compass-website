@@ -14,11 +14,7 @@ module.exports.signup = (async (req,res) => {
             if(err){
                 return next(err);
             }
-<<<<<<< HEAD
-            req.flash("success","Welcome to Compass!");
-=======
             req.flash("success","Welcome to Stay Compass!");
->>>>>>> 7c996f7 (changes done)
             res.redirect("/listings"); 
         });
  
@@ -33,11 +29,7 @@ module.exports.renderLoginForm =  (req,res)=>{
 };
 
 module.exports.login = async(req,res) => {
-<<<<<<< HEAD
-     req.flash("success","Welcome back to Compass!");
-=======
      req.flash("success","Welcome back to Stay Compass!");
->>>>>>> 7c996f7 (changes done)
      let redirectUrl = res.locals.redirectUrl || "/listings";
     res.redirect(redirectUrl); 
 }
