@@ -10,7 +10,11 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
+<<<<<<< HEAD
     folder: 'wanderlust_DEV',
+=======
+    folder: 'StayCompass_Gallery',
+>>>>>>> 7c996f7 (changes done)
     allowedFormat: ["png","jpg","jpeg"]
   },
 });

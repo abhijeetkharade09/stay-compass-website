@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 const initData = require('./data.js');     // ./ means "same directory"
 const Listing = require("../models/listing.js");
 
+<<<<<<< HEAD
 const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
+=======
+// const MONGO_URL = 'mongodb://127.0.0.1:27017/compass';
+>>>>>>> 7c996f7 (changes done)
 
 main()
     .then(() => {
